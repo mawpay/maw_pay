@@ -1,0 +1,166 @@
+/* Import font untuk tampilan lebih estetik */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #6a0dad, #ff8c00);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Navigasi */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+    padding: 0 10px;
+}
+
+/* Menghilangkan garis bawah dan warna ungu dari tautan navigasi */
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: white; /* Warna putih agar tetap kontras */
+    font-weight: 600;
+}
+
+/* Hover efek untuk navigasi */
+nav ul li a:hover {
+    color: #ffcc00; /* Warna kuning saat hover */
+}
+
+/* Menambahkan pemisah garis vertikal antara menu */
+nav ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -10px;
+    color: white;
+}
+
+/* Responsif untuk tampilan HP */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    nav ul li:not(:last-child)::after {
+        content: "";
+    }
+}
+
+/* Section (Konten utama) */
+section {
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul */
+h2 {
+    color: #6a0dad;
+    font-size: 26px;
+}
+
+/* Gaya Testimoni */
+.testimoni {
+    background: #f4f4f4;
+    padding: 15px;
+    border-left: 5px solid #6a0dad;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.testimoni p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.testimoni span {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #6a0dad;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Tombol */
+button {
+    background: #ff8c00;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e07b00;
+    transform: scale(1.05);
+}
+
+/* Styling untuk logo */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Posisikan logo ke tengah */
+    align-items: center;
+    margin-bottom: 0; /* Hilangkan jarak bawah */
+    padding-bottom: 0; /* Pastikan tidak ada padding tambahan */
+}
+
+.logo {
+    max-width: 120px; /* Sesuaikan ukuran logo jika perlu */
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Kurangi jarak langsung pada logo */
+}
+
+/* Styling untuk header agar lebih rapat */
+header h1 {
+    margin-top: 5px; /* Kurangi jarak atas */
+}
+
+
+
